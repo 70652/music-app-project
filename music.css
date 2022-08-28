@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+  height: 100%; 
+}
+
+body {
+  display: flex; 
+  flex-direction: column;
+  background-color: #412150;
+  height: 100%;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: rgb(37, 12, 58);
+  font-size: 16px;
+  }
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+  }
+
+aside {
+  flex: 0 0 40px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: #150333; 
+  color: #faeaea;
+  }
+
+aside i.fa {
+ font-size: 20px;  
+  }
+
+section.content {
+  display: flex;
+  flex: 1 0 auto; 
+  flex-direction: column;
+}
+
+section.content .music-header {
+  flex: 0 0 280px; 
+  display: flex;  
+  background-color: #0e0707;
+}
+
+section.content .music-header .the-progressives-music {
+	flex: 1 0 auto; 
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+	color: #e2ddcf;
+	padding-left: 50px;
+  font-size: 20px;
+}
+
+.the-progressives-music div:nth-child(1) {
+  margin-bottom: auto;
+}
+
+.the-progressives-music div:nth-child(2) {
+  margin-top: 0;
+}
+
+.the-progressives-music div:nth-child(2) i.fa {
+  font-size: 16px;
+  padding: 0 0.7em;
+  font-weight: 300;
+}
+.the-progressives-music div:nth-child(1) p:first-child {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+
+.the-progressives-music div:nth-child(1) p:not(:first-child) {
+  font-size: 16px;
+  margin: 2px 0;
+}
+
+section.content .top-ten-list {
+	flex: 1 0 auto;
+	list-style-type: none;
+	padding: 5px 10px 0px;
+  background: rgb(153, 100, 100);
+}
+
+li {
+  display: flex; 
+  padding: 0 20px;
+  min-height: 50px; 
+  color: #220e0e;
+}
+
+li p {
+  flex: 0 0 25%; 
+}
+
+li span.prog-sync {
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+li:nth-child(2n) {
+  background-color: #FAFAD2;
+}
+
+footer {
+	display: flex;
+	flex: 0 0 90px;
+	flex: 0 0 90px; 
+	padding: 10px;
+	color: rgb(218, 218, 218);
+	background-color: #00208b;
+}
+
+.the-progressives-music-small {
+	display: flex;
+	margin-right: auto;
+}
+.the-progressives-music-small img {
+	padding-right: 10px;
+}
+
+
+.the-progressives-music-controls {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+	width: 50%;
+}
+
+
+
+@media screen and (max-width: 64em) {
+	.small-hide {
+		display:none;
+	}
+	.small-text-center {
+		text-align: center;
+	}
+	.small-text-right {
+		text-align: right;
+	}
+
+	section.content .music-header {
+		flex: 0 0 auto; 
+		display: flex;
+		flex-direction: column; 
+		align-items: center; 
+		padding: 40px 0;
+		background-color: #8b8b37;
+	}
+
+	section.content .music-header .the-progressives-music{
+		padding: 0; 
+	}
+
+	.music-header img {
+		width: 150px;  
+	}
+
+
+	
+	.the-progressives-music div:nth-child(1) p:first-child { 
+		margin: 20px 0;
+		font-size: 16px;
+	}
+	
+	li p {              
+		flex: 0 0 50%;
+	}
+
+	.the-progressives-music-controls {   
+		justify-content: space-around;
+	}
+}
